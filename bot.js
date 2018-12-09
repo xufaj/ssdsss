@@ -12,26 +12,6 @@ const prefix = "*";
 const token = client.login(process.env.BOT_TOKEN);
 
 client.on("ready", () => {
-  console.log("power Tickety| Logged in! Server count: ${client.guilds.size}");
- | Logged in! Server count: ${client.guilds.size}");
-  client.user.setGame(`*help `);
-});
-
-
-const Discord = require("discord.js");
-const client = new Discord.Client();
-
-function clean(text) {
-    if (typeof(text) === "string")
-      return text.replace(/`/g, "`" + String.fromCharCode(8203)).replace(/@/g, "@" + String.fromCharCode(8203));
-    else
-        return text;
-}
-
-const prefix = "Your Prefix";
-const token = "Token Your Bot";
-
-client.on("ready", () => {
   console.log("power ticket | Logged in! Server count: ${client.guilds.size}");
   client.user.setGame(`*help`);
 });
