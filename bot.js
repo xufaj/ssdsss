@@ -12,9 +12,9 @@ const prefix = "*";
 const token = client.login(process.env.BOT_TOKEN);
 
 client.on("ready", () => {
-  console.log("power Tickety
+  console.log("power Tickety| Logged in! Server count: ${client.guilds.size}");
  | Logged in! Server count: ${client.guilds.size}");
-  client.user.setGame(`Support Magic |${prefix}new`);
+  client.user.setGame(`*help `);
 });
 
 
